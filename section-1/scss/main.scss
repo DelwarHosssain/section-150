@@ -1,0 +1,101 @@
+$primary:#32D6BE;
+$focus-ring-blur:0;
+$pra-color:#ABABAB;
+$font-color:#9CE6DA;
+$fw:600;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+.section-bg{
+    background-image: url(/image/nurse.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 999;
+    .form-contain{
+        padding-left:200px;
+        padding-top: 125px;
+        padding-right:50px;
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ffff;
+            margin-bottom: 10px;
+            color: $pra-color;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ffff;
+            margin-bottom: 10px;
+            height: 150px;
+            color: #ABABAB;
+        }
+        a{
+            font-weight: $fw;
+        }
+    }
+    
+}
+.section-bg::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: #33CDB6;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.appointment{
+    position: relative;
+    h2{
+        position: absolute;
+        top: 285px;
+        left: -15%;
+        font-size: 40px;
+        transform-origin: 0 0;
+        transform: rotate(270deg);
+        color: #9CE6DA;
+    }
+}
+
+
+
+.about-contain {
+    margin-left: 45px;
+    padding-top: 125px;
+    padding-right:150px;
+    h2{
+        font-size: 27px;
+    }
+    nav{
+        ul {
+            padding-left: 0;
+            li{
+                line-height: 35px;
+                font-size: 14px;
+                color: $pra-color;
+                span {
+                    padding-right: 15px;
+                    color: $primary;
+                }
+            }
+        }
+    }
+    a{
+        color: #ffffff;
+        font-weight: $fw;
+    }
+    }
+
+@import'../node_modules/bootstrap/scss/bootstrap.scss'
+
