@@ -1,0 +1,72 @@
+@forward"../base/index";
+@use"../util/index";
+
+.zigag-bg-1{
+    background-image: url(../image/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    
+}
+.zigag-bg-2{
+    background-image: url(../image/bg2.jpg);
+    background-position: left;
+    background-size: cover;
+    width: 100%;
+    
+}
+
+.zigig-text::after {
+    position: absolute;
+    top: 0px;
+    left: -4880%;
+    width: 5000%;
+    height: 100%;
+    background: #032451;
+    content: "";
+    z-index: -1;
+    transform: skew(10deg);
+}
+
+.zigig-text {
+    position: relative;
+    z-index: 2;
+    padding: 120px 0;
+    color: #ffffff;
+    h2 {
+        margin-bottom: 15px;
+    }
+    p{
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+    .common-btn{
+        padding: 10px 15px;
+        border-radius: 5px;
+        background: index.$primary;
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 15px;
+        display: inline-block;
+    }
+}
+
+.medile-border{
+    width: 100%;
+    height: 30px;
+    background: index.$primary;
+}
+
+.zigag-bg-2 .zigig-text {
+    padding: 120px 50px;
+    color: #ffffff;
+
+}
+.zigag-bg-2 .zigig-text::after {
+    left: auto;
+    right: -4880%;
+    background: #00CCCD;
+}
+@import'../node_modules/bootstrap/scss/bootstrap.scss'
