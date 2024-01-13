@@ -1,0 +1,67 @@
+@forward"../base/index";
+@use"../util/index";
+
+.video-area{
+    position: relative;
+    margin: 50px 0;
+    padding: 50px 0;
+    .video-bg{
+        background-image: url(/image/town-roads.jpg);
+        background-color: #ddd;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        height: 100%;
+        width: 40%;
+        box-shadow: 0 0 10px #999;
+    }
+}
+.video-play-btns{
+    a {
+        position: absolute;
+        top: 50%;
+        right: -35px;
+        transform: translateY(-50%);
+        height: 70px;
+        width: 70px;
+        line-height: 70px;
+        background: index.$primary;
+        text-align: center;
+        border-radius: 50%;
+        color: #ffffff;
+    }
+}
+.video-part-contain{
+    h2{
+        font-size: 18px;
+        font-weight: 800;
+        font-size: 14px;
+        
+    }
+    p{
+        padding: 15px 0;
+        color: #CECECE;
+    }
+    nav{
+        ul{
+            li{
+                line-height: 30px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+        li::before{
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f00c";
+            color: index.$primary;
+            padding-right: 15px;
+            font-size: 12px;
+        }
+    }
+}
+
+@import'../node_modules/bootstrap/scss/bootstrap.scss';
+
