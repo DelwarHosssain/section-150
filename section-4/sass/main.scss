@@ -1,0 +1,72 @@
+@forward"../base/index";
+@use"../util/index";
+
+.sarvices{
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.section-header{
+    text-align: center;
+    padding-bottom: 50px;
+    h2{
+        font-size: 22px;
+        font-weight: index.$lw;
+        padding-bottom: 15px;
+        position: relative;
+        &::before {
+            position: absolute;
+            bottom: 4px;
+            left: 50%;
+            width: 50px;
+            height: 5px;
+            background: index.$light-drak;
+            content: "";
+            margin-left: -20px;
+        }
+        &::after {
+            position: absolute;
+            bottom: 4px;
+            left: 50%;
+            background: index.$use-color;
+            height: 5px;
+            width: 15px;
+            content: "";
+            text-align: center;
+            margin-left: -3px;
+        }
+        p{
+            color: index.$pra-color;
+            font-size: 16px;
+        }
+    }
+}
+.contain-area{
+    padding: 30px 15px;
+    
+    
+    .contain-img{
+        img {
+            display: block;
+            margin: auto;
+        }
+    }
+    h3{
+        text-align: center;
+        font-size: 18px;
+        font-weight: index.$lw;
+        padding: 10px 0;
+    }
+    p{
+        text-align: center;
+        color: index.$pra-color;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+@import'../node_modules/bootstrap/scss/bootstrap.scss';
